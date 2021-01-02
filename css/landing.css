@@ -1,0 +1,130 @@
+#landing {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    url("/img/landing-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    background: rgba(0, 0, 0, .6);
+    color: white;
+    height: 120px;
+}
+header ul {
+    align-self: center;
+}
+header ul li{
+    display: block;
+    float: left;
+    margin: 0px 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+}
+header ul li a{
+    transition: .2s ease-in-out;
+    text-decoration: none;
+    color: white;
+}
+header ul li a:hover{
+    cursor: pointer;
+    color: #BBB18A;
+}
+#logo span {
+    font-weight: 900;
+    font-size: 60px;
+}
+.info-container {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+}
+.info-container ul {
+    align-self: center;
+    text-align: center;
+}
+.info-container ul li {
+    margin: 10px 0px;
+}
+.info-container ul li h1{
+    font-size: 60px;
+    font-weight: 900;
+}
+.info-container ul li h5{
+    font-weight: 400;
+    font-size: 20px;
+}
+.info-container ul li h6{
+    font-weight: 300;
+    font-size: 20px;
+}
+.socials {
+    margin: 0px 0px 40px 20px;
+}
+.socials ul li {
+    position: relative;
+    margin: 15px;
+    height: 60px;
+    width:60px;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, .6);
+    transition: .2s ease-in-out;
+}
+.socials ul li:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, .7);
+}
+.socials ul li a {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.hamburger {
+    /* align-self: center; */
+    display: none;
+    position: absolute;
+    float: right;
+    top: 40px;
+    bottom: 0;
+    right: 20px;
+    cursor: pointer;
+}
+.hamburger .line {
+    height: 1px;
+    width: 50px;
+    background: white;
+    margin: 7px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    header ul.links{
+        display: none;
+    }
+    header ul{
+        margin: 0px 50px;
+    }
+    .hamburger {
+        display: block;
+        float: right;
+    }
+    .socials {
+        display: none;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 2000px) {
+    .socials {
+        margin: 160px 0px 40px 20px;
+    }
+}
