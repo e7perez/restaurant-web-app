@@ -80,19 +80,19 @@
     width: 100%;
 }
 .top-left {
-    background: url(/img/about-top-left.jpg);
+    background: url(../img/about-top-left.jpg);
     background-position: center;
     background-size: cover;
     grid-area: topleft;
 }
 .top-right {
-    background: url(/img/about-top-right.jpg);
+    background: url(../img/about-top-right.jpg);
     background-position: center;
     background-size: cover;
     grid-area: topright;
 }
 .bottom {
-    background: url(/img/about-bottom.jpg);
+    background: url(../img/about-bottom.jpg);
     background-position: center;
     background-size: cover;
     grid-area: lower;

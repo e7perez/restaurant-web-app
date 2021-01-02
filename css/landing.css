@@ -4,7 +4,7 @@
     width: 100%;
     background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-    url("/img/landing-bg.jpg");
+    url("../img/landing-bg.jpg");
     background-position: center;
     background-size: cover;
 }
