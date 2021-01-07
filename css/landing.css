@@ -97,7 +97,7 @@ header ul li a:hover{
     width: 48px;
     right: 20px;
     top: 30px;
-    background: url(/img/menu.svg);
+    background: url(../img/menu.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -106,7 +106,7 @@ header ul li a:hover{
 .hamburger.active{
     height: 48px;
     width: 48px;
-    background: url(/img/close.svg);
+    background: url(../img/close.svg);
     background-position: center;
     background-size: 35px;
     background-repeat: no-repeat;
