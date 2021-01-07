@@ -67,6 +67,7 @@ header ul li a:hover{
 .info-container ul li h6{
     font-weight: 300;
     font-size: 20px;
+    text-decoration: none;
 }
 .socials {
     margin: 0px 0px 40px 20px;
@@ -146,6 +147,9 @@ header ul li a:hover{
     }
     .socials {
         display: none;
+    }
+    .info-container ul li h1 {
+        font-size: 2.5em;
     }
 }
 @media only screen and (min-width: 769px){

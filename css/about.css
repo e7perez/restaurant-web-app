@@ -129,7 +129,8 @@
         height: 350px;
     }
     .about-info-container h1 {
-    font-size: 35px;
+        font-size: 35px;
+        margin: 20px;
     }
 }
 
@@ -164,7 +165,9 @@
             height: 350px;
         }
         .about-info-container h1 {
-        font-size: 35px;
+            font-size: 35px;
+            margin: 20px;
+            
         }
 }
 
