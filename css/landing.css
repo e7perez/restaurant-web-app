@@ -90,20 +90,51 @@ header ul li a:hover{
     left: 15px;
 }
 .hamburger {
-    /* align-self: center; */
-    display: none;
     position: absolute;
-    float: right;
-    top: 40px;
-    bottom: 0;
+    height: 48px;
+    width: 48px;
     right: 20px;
+    top: 30px;
+    background: url(/img/menu.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     cursor: pointer;
 }
-.hamburger .line {
-    height: 1px;
-    width: 50px;
-    background: white;
-    margin: 7px;
+.hamburger.active{
+    height: 48px;
+    width: 48px;
+    background: url(/img/close.svg);
+    background-position: center;
+    background-size: 35px;
+    background-repeat: no-repeat;
+}
+.navigation {
+    display: none;
+}
+.navigation.active {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: black;
+}
+.navigation ul {
+    position: absolute;
+    top: 100px;
+    margin-left: 20px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.navigation ul li a:hover{
+    color: #BBB18A;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) {
@@ -113,18 +144,19 @@ header ul li a:hover{
     header ul{
         margin: 0px 50px;
     }
-    .hamburger {
-        display: block;
-        float: right;
-    }
     .socials {
         display: none;
     }
 }
-
+@media only screen and (min-width: 769px){
+    .hamburger {
+        display: none;
+    }
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 2000px) {
     .socials {
         margin: 160px 0px 40px 20px;
     }
+    
 }
