@@ -113,30 +113,39 @@ header ul li a:hover{
 }
 .navigation {
     display: none;
+    
 }
 .navigation.active {
     display: block;
-    position: absolute;
-    height: 100vh;
+    position: fixed;
+    height: 50vh;
     width: 100%;
-    background: black;
+    background: #242424;
+    overflow: hidden;
+    
 }
 .navigation ul {
     position: absolute;
-    top: 100px;
-    margin-left: 20px;
+    
+    width: 100%;
+    margin-top: 100px;
+    /* padding-top: 100px; */
+    height: 100%;
 }
-
+.navigation ul li {
+    width: 100%;
+    border: 1px #BBB18A;
+    border-style: solid none solid none;
+    padding: 10px 0px;
+}
 .navigation ul li a {
     text-decoration: none;
     color: white;
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 200;
     cursor: pointer;
     transition: .2s ease-in-out;
-}
-.navigation ul li a:hover{
-    color: #BBB18A;
+    text-transform: uppercase;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) {
